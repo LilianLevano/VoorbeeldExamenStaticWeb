@@ -33,11 +33,24 @@ header{
             gap: 20px;
             font-size: 1.5rem;
             justify-content: center;
-            padding: 20px;
-        }
+            padding: 15px;
 
-        position: sticky;
+            
+        }
+        
+        li.right{
+            margin-left: auto;
+        }
+     
+        .center{
+            margin: auto;
+        }
+    
+
+        position: fixed;
+        z-index: 20;
         top: 0vw;
+        width: 100vw;
     }
     .page-title{
         background-image: url("../images/header.jpg");
@@ -66,7 +79,7 @@ header{
 }
 
 main{
-    height: 150vh;
+    min-height: 100vh;
     .recentFilms{
         background-color: white;
         padding: 20px;
@@ -169,11 +182,16 @@ main{
     
     .checkOutContainer{
         padding-top: 30px;
+        padding-bottom: 30px;
         margin-left: 10%;
+        margin-bottom: 10%;
+       
+        
         
         .checkOutBox{
             display: flex;
             gap: 5%;
+            flex-wrap: wrap;
             
             img{
                 width: auto;
@@ -190,9 +208,10 @@ main{
 }
 
 footer{
-    height: 25vh;
+
+
     background-color: #313030;
-    margin-top: 5%;
+
     
     .textContainerFooter{
         display: flex;
@@ -200,7 +219,7 @@ footer{
         
         
         ul {
-            margin-top: 50%;
+            
             display: flex;
             flex-direction: column;
             justify-content: flex-start;

@@ -1,0 +1,107 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "BBH Bogle", sans-serif;
+    letter-spacing: 1px;
+}
+
+
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+
+    nav{
+
+        background: white;
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            font-size: 1.3rem;
+            justify-content: center;
+            padding: 15px;
+
+
+        }
+
+        li.right{
+            margin-left: auto;
+        }
+
+        .center{
+            margin: auto;
+        }
+
+
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        width: 100vw;
+    }
+    .page-title{
+        background-image: url("../images/superman/superman-film-2025-banniere-scaled.webp");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+
+
+
+    }
+
+    h1{
+        padding: 10vw;
+        text-align: center;
+        background: white;
+        font-size: 4rem;
+        color: white;
+
+    }
+
+}
+
+main{
+
+    height: 150vw;
+    aside{
+        position: absolute;
+        top: 50%;
+        right: 2%;
+    }
+
+    .filmSummarize{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        margin-left: 10%;
+        gap: 30px;
+        width: 75vw;
+
+        img{
+            width: auto;
+            height: 500px;
+        }
+
+        .textSummarize{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .topCastSectionBackground{
+        background-color: #efeeee;
+
+        .topCastSection{
+            margin-left: 10%;
+        }
+    }
+
+}
