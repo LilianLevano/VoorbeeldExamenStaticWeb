@@ -33,13 +33,24 @@ header{
             gap: 20px;
             font-size: 1.5rem;
             justify-content: center;
-            padding: 15px;
+            padding: 7px;
+
+            li{
+                a{
+                    text-decoration: none;
+                    background-color: cornflowerblue;
+                    color: black;
+                    padding: 5px;
+                    border-radius: 15px;
+                }
+            }
 
             
         }
         
         li.right{
             margin-left: auto;
+            padding-right: 5px;
         }
      
         .center{
@@ -82,6 +93,7 @@ main{
     min-height: 100vh;
     .recentFilms{
         background-color: white;
+        margin-top: 20px;
         padding: 20px;
         h2{
             text-align: center;

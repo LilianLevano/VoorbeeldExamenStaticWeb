@@ -5,8 +5,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+h1{
     font-family: "BBH Bogle", sans-serif;
-    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+#recentfilms{
+    display: none;
 }
 
 
@@ -22,19 +32,34 @@ header{
     nav{
 
         background: white;
+        font-family: "BBH Bogle", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 1px;
         ul{
             display: flex;
             list-style: none;
             gap: 20px;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             justify-content: center;
-            padding: 15px;
+            padding: 7px;
+
+            li{
+                a{
+                    text-decoration: none;
+                    background-color: cornflowerblue;
+                    color: black;
+                    padding: 5px;
+                    border-radius: 15px;
+                }
+            }
 
 
         }
 
         li.right{
             margin-left: auto;
+            padding-right: 5px;
         }
 
         .center{
@@ -72,7 +97,7 @@ main{
 
     height: 150vw;
     aside{
-        position: absolute;
+        position: fixed;
         top: 50%;
         right: 2%;
     }
@@ -86,6 +111,7 @@ main{
         width: 75vw;
 
         img{
+
             width: auto;
             height: 500px;
         }
@@ -93,14 +119,68 @@ main{
         .textSummarize{
             display: flex;
             flex-direction: column;
+            font-family: "Roboto Light", sans-serif;
+            width: 30vw;
         }
     }
 
     .topCastSectionBackground{
         background-color: #efeeee;
+        padding-bottom: 20px;
 
         .topCastSection{
-            margin-left: 10%;
+            margin-left: 5%;
+
+
+            .topCastContainer{
+                padding-top: 20px;
+
+                ul{
+                    display: flex;
+                    list-style: none;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+
+                    img{
+                        width: auto;
+                        height: 261px;
+                        border-radius: 19px;
+                        margin: 5px;
+                    }
+
+                    li{
+                        text-align: center;
+                        background-color: silver;
+                        padding: 10px;
+                        border-radius: 20px;
+                        transition: 0.5s;
+                    }
+
+                    li span{
+                        display: inline-block;
+                    }
+
+                    span{
+                        opacity: 0;
+                        transform: translateY(-120%);
+                        transition: 0.5s;
+
+                    }
+
+                    li:hover span{
+
+                        opacity: 1;
+                        transform: translateY(30%);
+
+
+                    }
+
+                    li:hover{
+                        transform: scale(1.05);
+                    }
+
+                }
+            }
         }
     }
 
